@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px;
+}
+.companyInitials > img{
+    height: 60px;
+    width: auto;
+}
+.companyInitials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.headerMenu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.headerMenu > button{
+    height: 40px;
+    width: 80px;
+}
+.headerMenu > button > a{
+    text-decoration: none;
+    color: black;
+}
+.userImg > img{
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.userCard{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.userCard > button{
+    height: 40px;
+    width: 80px;
+}
+.userCard > button > a{
+    text-decoration: none;
+    color: black;
+}
+.userOption{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.regForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}

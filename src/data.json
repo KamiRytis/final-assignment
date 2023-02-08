@@ -1,34 +1,33 @@
 {
-    "users":[
-        {
-            "id":0,
-            "userName":"Rytis",
-            "email":"Rytis@gmail.com",
-            "password":"rytis123",
-            "avatar":"https://i.pinimg.com/originals/e9/1e/94/e91e949759f1b2a2ed5f5e191c1ba5a0.png"
-        },
-        {
-            "id":1,
-            "userName":"Jonas",
-            "email":"Jonas@gmail.com",
-            "password":"jonas123",
-            "avatar":"https://www.nicepng.com/png/full/914-9142519_mlg-doge-png.png"
-        }
-    ],
-    "posts":[
-        {
-
-        },
-        {
-
-        }
-    ],
-    "answers":[
-        {
-
-        },
-        {
-
-        }
-    ]
+  "users": [
+    {
+      "id": 0,
+      "userName": "Rytis",
+      "email": "Rytis@gmail.com",
+      "password": "rytis123",
+      "avatar": "https://i.pinimg.com/originals/e9/1e/94/e91e949759f1b2a2ed5f5e191c1ba5a0.png"
+    },
+    {
+      "id": 1,
+      "userName": "Jonas",
+      "email": "Jonas@gmail.com",
+      "password": "jonas123",
+      "avatar": "https://www.nicepng.com/png/full/914-9142519_mlg-doge-png.png"
+    },
+    {
+      "userName": "Rytis1",
+      "email": "Rytis1@gmail.com",
+      "password": "test1234",
+      "avatar": "https://freepngimg.com/thumb/youtube/63841-profile-twitch-youtube-avatar-discord-free-download-image.png",
+      "id": 1675859705547
+    }
+  ],
+  "posts": [
+    {},
+    {}
+  ],
+  "answers": [
+    {},
+    {}
+  ]
 }
