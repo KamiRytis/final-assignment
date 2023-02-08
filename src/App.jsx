@@ -4,6 +4,7 @@ import Header from './components/Menu/Header';
 import LogIn from './components/Menu/LogIn';
 import Register from './components/Menu/Register';
 import Main from './components/Main';
+import Footer from './components/Menu/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/register' element={<Register />}/>
       <Route path='/login' element={<LogIn />}/>
     </Routes>
+    <Footer />
     </>
   );
 }
