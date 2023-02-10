@@ -4,8 +4,6 @@ import { useContext, useState } from 'react';
 import UserContext from '../../contexts/UserContext';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const Register = () => {
     const [values] = useState({
         userName: '',
@@ -22,11 +20,11 @@ const Register = () => {
     const validationSchema = Yup.object().shape({
         userName: Yup.string()
             .required("This field must be filled.")
-            .test('unique username',"User with this username already exists", (value) => !users.find(user => user.userName === value)),
+            .test('unique username', "User with this username already exists", (value) => !users.find(user => user.userName === value)),
         email: Yup.string()
             .required("This field must be filled.")
             .email("You must enter a valid email")
-            .test('unique email',"User with this email already exists", (value) => !users.find(user => user.email === value)),
+            .test('unique email', "User with this email already exists", (value) => !users.find(user => user.email === value)),
         password: Yup.string()
             .required("This field must be filled.")
             .min(8, 'Password must be at least 8 symbols length.'),
@@ -56,10 +54,11 @@ const Register = () => {
             <Formik
                 initialValues={values}
                 validationSchema={validationSchema}
-                onSubmit={(values)=>handleSubmit(values)}
+                onSubmit={(values) => handleSubmit(values)}
             >
                 {({ errors, touched, values, setValues }) => (
-                    <Form className='regForm'>
+                    <Form className='userForm'>
+                        <h1>Please, Register</h1>
                         <label>Username:
                             <Field
                                 name='userName'

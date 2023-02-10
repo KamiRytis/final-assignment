@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .header{
     height: 80px;
@@ -23,10 +24,6 @@ body{
     gap: 10px;
     align-items: center;
 }
-.headerMenu > button{
-    height: 40px;
-    width: 80px;
-}
 .headerMenu > button > a{
     text-decoration: none;
     color: black;
@@ -42,10 +39,7 @@ body{
     align-items: center;
     gap: 10px;
 }
-.userCard > button{
-    height: 40px;
-    width: 80px;
-}
+
 .userCard > button > a{
     text-decoration: none;
     color: black;
@@ -55,9 +49,30 @@ body{
     flex-direction: column;
     gap: 5px;
 }
-.regForm{
+.userForm{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     margin-top: 50px;
+}
+.userForm > label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.userForm > label > input{
+    width: 250px;
+}
+.userForm span{
+    color: red;
+}
+.button-type1{
+    height: 40px;
+    width: 100px;
+}
+.button-type2{
+    height: 25px;
+    margin-right: 3px;
 }
