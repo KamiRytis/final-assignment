@@ -4,8 +4,6 @@ import { useContext, useState } from 'react';
 import UserContext from '../../contexts/UserContext';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const Register = () => {
     const [values] = useState({
         userName: '',
@@ -59,7 +57,8 @@ const Register = () => {
                 onSubmit={(values)=>handleSubmit(values)}
             >
                 {({ errors, touched, values, setValues }) => (
-                    <Form className='regForm'>
+                    <Form className='userForm'>
+                        <h1>Please, Register</h1>
                         <label>Username:
                             <Field
                                 name='userName'

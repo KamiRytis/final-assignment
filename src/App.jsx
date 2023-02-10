@@ -12,9 +12,9 @@ function App() {
     <Routes>
       <Route element={<Header />}>
         <Route path='/' element={<Main />}/>
+        <Route path='/register' element={<Register />}/>
+        <Route path='/login' element={<LogIn />}/>
       </Route>
-      <Route path='/register' element={<Register />}/>
-      <Route path='/login' element={<LogIn />}/>
     </Routes>
     <Footer />
     </>
