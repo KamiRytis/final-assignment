@@ -17,8 +17,8 @@ const Header = () => {
                 loggedInUser?
                 <UserPage /> :
                 <div className="headerMenu">
-                    <button><Link to='/login'>Log in</Link></button>
-                    <button><Link to='/register'>Register</Link></button>
+                    <button className="button-type1"><Link to='/login'>Log in</Link></button>
+                    <button className="button-type1"><Link to='/register'>Register</Link></button>
                 </div>
             }
         </header>
