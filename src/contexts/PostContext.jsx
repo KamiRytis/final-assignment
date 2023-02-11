@@ -15,21 +15,43 @@ const PostProvider = ({children}) => {
     },[])
 
     const addPost = (newPost)=>{
-        fetch('http://localhost:3000/posts',{
+        fetch('http://localhost:3000/posts/',{
             method: 'POST',
             headers:{
                 'Content-type': 'application/json; charset =UTF-8'
             },
-            body:JSON.stringify(newPost)
+            body: JSON.stringify(newPost)
         })
+        .then(res=>res.json())
         setPosts([...posts, newPost])
+    }
+
+    const deletePost = (id)=>{
+        fetch(`http://localhost:3000/posts/${id}`,{
+            method: "DELETE"
+        })
+        .then(res=>res.json())
+        setPosts(posts.filter(post=>post.id !== id));
+    }
+
+    const editPost = (id,updatedPost)=>{
+        fetch(`http://localhost:3000/posts/${id}`,{
+            method: "PATCH",
+            body: JSON.stringify(updatedPost),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+              },
+        })
+        setPosts(posts.map(post=>post.id.toString() === id ? {...post, ...updatedPost}:post))
     }
 
     return ( 
         <PostContext.Provider 
             value={{
                 posts,
-                addPost
+                addPost,
+                deletePost,
+                editPost
             }}
         >
             {children}

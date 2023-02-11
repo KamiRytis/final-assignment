@@ -27,7 +27,7 @@ const AddPost = () => {
 
     const handleSubmit = (values) => {
         let newPost = {
-            postId: Date.now(),
+            id: Date.now(),
             userId: loggedInUser.id,
             title: values.title,
             content: values.content,

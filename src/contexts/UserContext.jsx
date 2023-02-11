@@ -2,7 +2,6 @@ import {createContext, useState, useEffect } from "react";
 
 const UserContext = createContext();
 
-
 const UserProvider = ({children}) => {
     const [loggedInUser, setLoggedInUser]= useState();
     const [users, setUsers]=useState([]);
@@ -37,7 +36,6 @@ const UserProvider = ({children}) => {
         >
             {children}
         </UserContext.Provider>
-
     );
 }
 export {UserProvider}
