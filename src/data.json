@@ -50,11 +50,10 @@
   ],
   "answers": [
     {
-      "id": 1,
+      "id": 0,
       "postId": 0,
       "userId": 1,
-      "title": "question 2",
-      "content": "I could answer it but you would call it a straw man",
+      "content": "This is the answer 1",
       "edited": false,
       "numOfLikes": 0
     },
@@ -62,17 +61,15 @@
       "id": 1,
       "postId": 0,
       "userId": 1,
-      "title": "question 2",
-      "content": "I could answer it but you would call it a straw man",
+      "content": "This is the answer 2",
       "edited": false,
       "numOfLikes": 0
     },
     {
-      "id": 1,
+      "id": 2,
       "postId": 1,
       "userId": 1,
-      "title": "question 2",
-      "content": "I could answer it but you would call it a straw man",
+      "content": "This is the answer 3",
       "edited": false,
       "numOfLikes": 0
     }
