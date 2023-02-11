@@ -24,38 +24,57 @@
   ],
   "posts": [
     {
-      "postId":0,
-      "userId":0,
-      "title":"question 1",
-      "content":"I could answer it but you would call it a straw man",
-      "edited":false,
-      "numOfLikes":0
+      "id": 0,
+      "userId": 0,
+      "title": "Question nr 1 of this list",
+      "content": "I could answer it but you would call it a straw man",
+      "edited": false,
+      "numOfLikes": 0
     },
     {
-      "postId":1,
-      "userId":1,
-      "title":"question 2",
-      "content":"I could answer it but you would call it a straw man",
-      "edited":false,
-      "numOfLikes":0
+      "id": 1,
+      "userId": 1,
+      "title": "question 2",
+      "content": "I could answer it but you would call it a straw man",
+      "edited": false,
+      "numOfLikes": 0
+    },
+    {
+      "id": 1676118306264,
+      "userId": 0,
+      "title": " dasda sd ad ad asd asd as",
+      "content": "asd asd asd ad asd ad asd asd asd asd",
+      "edited": false,
+      "numOfLikes": 0
     }
   ],
   "answers": [
     {
-      "id":0,
-      "postId":0,
-      "userId":0,
-      "content":"I could answer it but you would call it a straw man",
-      "edited":false,
-      "numOfLikes":0
+      "id": 1,
+      "postId": 0,
+      "userId": 1,
+      "title": "question 2",
+      "content": "I could answer it but you would call it a straw man",
+      "edited": false,
+      "numOfLikes": 0
     },
     {
-      "id":1,
-      "postId":1,
-      "userId":1,
-      "content":"I could answer it but you would call it a blabla man",
-      "edited":false,
-      "numOfLikes":0
+      "id": 1,
+      "postId": 0,
+      "userId": 1,
+      "title": "question 2",
+      "content": "I could answer it but you would call it a straw man",
+      "edited": false,
+      "numOfLikes": 0
+    },
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 1,
+      "title": "question 2",
+      "content": "I could answer it but you would call it a straw man",
+      "edited": false,
+      "numOfLikes": 0
     }
   ]
 }

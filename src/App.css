@@ -10,6 +10,10 @@ body{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     padding: 10px;
 }
+.header > a{
+    text-decoration: none;
+    color: black;
+}
 .companyInitials > img{
     height: 60px;
     width: auto;

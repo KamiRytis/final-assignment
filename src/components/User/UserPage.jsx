@@ -1,4 +1,4 @@
-import {Link, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import UserContext from '../../contexts/UserContext';
 import { useContext } from 'react';
 
@@ -16,7 +16,6 @@ const UserPage = () => {
     <>
         <div>
             <div className='userCard'>
-                <button><Link>Ask new Question</Link></button>
                 <div className='userImg'>
                     <img src={loggedInUser.avatar} alt="avatarImg" />
                 </div>

@@ -9,10 +9,13 @@ const Header = () => {
     return ( 
     <> 
         <header className="header">
-            <div className="companyInitials">
-                <img src="https://botw-pd.s3.amazonaws.com/qa1.png" alt="logo" />
-                <h3>SEEK THE ANSWER</h3>
-            </div>
+            <Link to='/'>
+                <div className="companyInitials">
+                    <img src="https://botw-pd.s3.amazonaws.com/qa1.png" alt="logo" />
+                    <h3>SEEK THE ANSWER</h3>
+                </div>
+            </Link>
+            
             {
                 loggedInUser?
                 <UserPage /> :
