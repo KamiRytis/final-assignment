@@ -32,7 +32,8 @@ const AddPost = () => {
             title: values.title,
             content: values.content,
             edited: false,
-            numOfLikes:0
+            numOfLikes:0,
+            dateAsked:new Date().toLocaleString()
         }
         addPost(newPost)
         navigation("/");

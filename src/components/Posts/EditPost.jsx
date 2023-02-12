@@ -28,7 +28,12 @@ const EditPost = () => {
     });
 
     const handleSubmit =(values)=>{
-        editPost(id, values);
+        const updatedPost={
+            title:values.title,
+            content:values.content,
+            edited:true
+        }
+        editPost(id, updatedPost);
         navigation("/");
     }
 

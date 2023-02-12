@@ -3,7 +3,7 @@ import {createContext, useEffect, useState } from "react";
 const PostContext = createContext();
 
 const PostProvider = ({children}) => {
-    const [posts, setPosts]=useState([])
+    const [posts, setPosts]=useState([]);
 
     const getPosts = async ()=>{
         const postsFetched =await fetch("http://localhost:3000/posts").then(res=>res.json());
@@ -45,13 +45,25 @@ const PostProvider = ({children}) => {
         setPosts(posts.map(post=>post.id.toString() === id ? {...post, ...updatedPost}:post))
     }
 
+    const likesManaging = (id,changedPost)=>{
+        fetch(`http://localhost:3000/posts/${id}`,{
+            method: "PATCH",
+            body: JSON.stringify(changedPost),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+              },
+        })
+        setPosts(posts.map(post=>post.id.toString() === id ? {...post, ...changedPost}:post))
+    }
+
     return ( 
         <PostContext.Provider 
             value={{
                 posts,
                 addPost,
                 deletePost,
-                editPost
+                editPost,
+                likesManaging
             }}
         >
             {children}
