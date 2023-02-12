@@ -1,16 +1,18 @@
-import { useContext } from "react";
-import PostContext from "../../contexts/PostContext";
+import { useContext} from "react";
 import UserContext from "../../contexts/UserContext";
-import { Link } from 'react-router-dom';
+import AnswerContext from "../../contexts/AnswerContext";
+import "./Answer.css";
+
 
 
 
 const Answer = ({data}) => {
 
-    const {users, loggedInUser}=useContext(UserContext)
-    const {deletePost}=useContext(PostContext)
+    const {users, loggedInUser}=useContext(UserContext);
+    const {deleteAnswer}=useContext(AnswerContext);
 
     const answerOwner = users.find(user=>user.id === data.userId)
+
 
     return (
         <>
@@ -20,21 +22,22 @@ const Answer = ({data}) => {
                         <img src={answerOwner.avatar} alt="avatar" />
                         <div>
                             <p>{answerOwner.userName}</p>
-                            <p>asked: 2022.02.10 11:55</p>
+                            <p>{data.dateCreated}</p>
                         </div>
                     </div>
                     <div>
                         {
                             loggedInUser && loggedInUser.id === answerOwner.id &&
                             <>
-                                <button className="button-type2" onClick={() => deletePost(data.id)}>delete</button>
-                                <Link to={`/editPost/${data.id}`}><button className="button-type2">edit</button></Link>
+                                <button className="button-type2" onClick={() => deleteAnswer(data.id)}>delete</button>
+                                <button className="button-type2">edit</button>
                             </>
                         }
                     </div>
                 </div>
                 <div className="answerContent">
                     <p>{data.content}</p>
+
                     <button className="button-type2">Like</button>
                     <button className="button-type2">Dislike</button>
                 </div>

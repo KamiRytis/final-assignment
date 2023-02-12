@@ -45,13 +45,25 @@ const AnswerProvider = ({children}) => {
         setAnswers(answers.map(answer=>answer.id.toString() === id ? {...answer, ...updatedAnswer}:answer))
     }
 
+    const answerLikesManaging = (id,changedAnswer)=>{
+        fetch(`http://localhost:3000/answers/${id}`,{
+            method: "PATCH",
+            body: JSON.stringify(changedAnswer),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+              },
+        })
+        setAnswers(answers.map(answer=>answer.id.toString() === id ? {...answer, ...changedAnswer}:answer))
+    }
+
     return ( 
         <AnswerContext.Provider 
             value={{
                 answers,
                 addAnswer,
                 deleteAnswer,
-                editAnswer
+                editAnswer,
+                answerLikesManaging
             }}
         >
             {children}

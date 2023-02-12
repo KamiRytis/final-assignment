@@ -29,7 +29,8 @@
       "title": "Question nr 1 of this list",
       "content": "I could answer it but you would call it a straw man",
       "edited": false,
-      "numOfLikes": 0
+      "numOfLikes": -9,
+      "dateAsked": "2022.02.10 11:55"
     },
     {
       "id": 1,
@@ -37,7 +38,8 @@
       "title": "question 2",
       "content": "I could answer it but you would call it a straw man",
       "edited": false,
-      "numOfLikes": 0
+      "numOfLikes": 4,
+      "dateAsked": "2022.02.10 11:55"
     },
     {
       "id": 1676118306264,
@@ -45,7 +47,8 @@
       "title": " dasda sd ad ad asd asd as",
       "content": "asd asd asd ad asd ad asd asd asd asd",
       "edited": false,
-      "numOfLikes": 0
+      "numOfLikes": 23,
+      "dateAsked": "2022.02.10 11:55"
     }
   ],
   "answers": [
@@ -55,7 +58,8 @@
       "userId": 1,
       "content": "This is the answer 1",
       "edited": false,
-      "numOfLikes": 0
+      "numOfLikes": 0,
+      "dateCreated": "2022.02.10 11:55"
     },
     {
       "id": 1,
@@ -63,7 +67,8 @@
       "userId": 1,
       "content": "This is the answer 2",
       "edited": false,
-      "numOfLikes": 0
+      "numOfLikes": 0,
+      "dateCreated": "2022.02.10 11:55"
     },
     {
       "id": 2,
@@ -71,7 +76,44 @@
       "userId": 1,
       "content": "This is the answer 3",
       "edited": false,
-      "numOfLikes": 0
+      "numOfLikes": 0,
+      "dateCreated": "2022.02.10 11:55"
+    },
+    {
+      "id": 1676191819216,
+      "postId": 0,
+      "userId": 0,
+      "content": "i Do not know wtf",
+      "edited": false,
+      "numOfLikes": 0,
+      "dateCreated": "2022.02.10 11:55"
+    },
+    {
+      "id": 1676227956841,
+      "postId": 0,
+      "userId": 0,
+      "content": "another answer to the same question",
+      "edited": false,
+      "numOfLikes": 0,
+      "dateCreated": "2/12/2023, 8:52:36 PM"
+    },
+    {
+      "id": 1676228882324,
+      "postId": 0,
+      "userId": 0,
+      "content": "asd asd  asd  asd ",
+      "edited": false,
+      "numOfLikes": 0,
+      "dateCreated": "2/12/2023, 9:08:02 PM"
+    },
+    {
+      "id": 1676229014355,
+      "postId": 0,
+      "userId": 0,
+      "content": " asd asd asd ",
+      "edited": false,
+      "numOfLikes": 0,
+      "dateCreated": "2/12/2023, 9:10:14 PM"
     }
   ]
 }

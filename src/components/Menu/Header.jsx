@@ -20,8 +20,8 @@ const Header = () => {
                 loggedInUser?
                 <UserPage /> :
                 <div className="headerMenu">
-                    <button className="button-type1"><Link to='/login'>Log in</Link></button>
-                    <button className="button-type1"><Link to='/register'>Register</Link></button>
+                    <Link to='/login'><button className="button-type1">Log in</button></Link>
+                    <Link to='/register'><button className="button-type1">Register</button></Link>
                 </div>
             }
         </header>
