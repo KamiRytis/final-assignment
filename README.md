@@ -9,7 +9,10 @@
 
 4.Įsirašome reikalingus modulius paleisdami terminale komandą npm i.  
 
-5.Terminale naudodami komandas (cd) susirandame failo direktoriją ir paleidžiame komandą npm i react-router-dom .
+5.Terminale naudodami komandas (cd) susirandame failo direktoriją ir paleidžiame komandą npm i 
+  -react-router-dom
+  -npm i yup
+  -npm i formik
 
 6.Neuždarę pirmojo terminalo, atsidarome naują terminalą. Naudodami terminalo komandas nueiname iki projekto src failo ir paleidžiame komandą json-server --watch data.json 
 
