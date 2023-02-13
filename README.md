@@ -1,6 +1,6 @@
 # Paleidimo instrukcijos :
 
-## Žingsiniai
+## Žingsniai
 1.Įsijungiame Visual Studio Code progrąmą.
 
 2.Atsidarome pateiktą failą per užduočių juostą-> open folder-> (pasirenkame atsisiųstą "project" aplanką savo kompiuteryje).
